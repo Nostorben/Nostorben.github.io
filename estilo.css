@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Elegant';
+    src: url('fonts/Elegant.ttf') format('truetype'); /* Corrección en la ruta */
+}
+
+body {
+    font-family: 'Elegant', Kanit-Black; /* Este valor duplicado debería eliminarse */
+    background-color: #171312;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-padding-top: 20%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    display: flex;
+    width: 87%;
+    border-radius: 30px 30px 0 0;
+    background-color: #0D0B0A;
+    margin-top: 6vh;
+    color: #95bee2;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+}
+
+footer div div {
+    background-color: #1F1918;
+    border-radius: 30px;
+    width: 30%;
+    padding: 0 6%;
+}
+
+
+
+
+
+
+::selection {
+    background-color: #ff7d77;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    border-radius: 29px;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 29px;
+    background-color: #362D29; /* Cambia el color del pulgar del scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4D403A; /* Cambia el color del pulgar del scrollbar */
+}
+
+/* Logo inicial*/
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+header img {
+    height: 40vh;
+    align-self: center;
+}
+
+nav div {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    min-width: 120px;
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #af8782;
+    border-radius: 9px;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    background-color: #af8782;
+    color: #120F0E;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+}
+
+main section div {
+    background-color: #26201D;
+    width: 75%;
+    height: 150px;
+    border-radius: 21px;
+}
+
+
+
+
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 1286px) {
+    footer div {
+    width: 83%;
+    }
+}
+
+@media (max-width: 1000px) {
+    footer div {
+    width: 79%;
+    }
+}
+
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 700px) {
+    ul {
+        flex-direction: column; /* Mostrar los botones uno debajo del otro en dispositivos pequeños */
+    }
+
+    li {
+        margin-right: 0; /* Eliminar el espacio entre los botones en dispositivos pequeños */
+        margin-bottom: 5px; /* Agregar espacio entre los botones en dispositivos pequeños */
+    }
+}
