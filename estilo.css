@@ -137,6 +137,7 @@ main section a {
     width: 75%;
     height: 150px;
     border-radius: 21px;
+    margin: 0 auto 1% auto;
 }
 
 main section a img {
