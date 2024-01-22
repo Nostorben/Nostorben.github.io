@@ -141,7 +141,8 @@ main section a {
 }
 
 main section a img {
-    margin: 10px;
+    margin: 18px;
+    height: 75%;
 }
 
 main section a h3 {
@@ -163,6 +164,16 @@ main section div {
     background-color: #544740;
 }
 
+
+
+
+
+
+/*
+   ┏┓                                    ┏┓
+   ┃┃▶  Previsualizacion de programas  ◀┃┃
+   ┗┛                                    ┗┛
+*/
 .ContainerBox {
     display: flex;
     align-items: center;
@@ -183,12 +194,23 @@ main section div {
     font-size: 300%;
 }
 
-.ContainerBox span {
-    opacity: 0.2;
+.HiddenItems span {
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
+.HiddenItems:Hover span {
+    opacity: 0.6;
+}
+
+
+
+
+
+
 .DownloadBox {
-    background-color: #63544C;
+    background-color: #36BF74;
     margin: 30px;
     min-width: 70px;
     width: 70px;
@@ -199,13 +221,24 @@ main section div {
 }
 
 .DownloadBox:hover {
-    background-color: #7A675D;
+    background-color: #40E68B;
 }
 
 .DownloadBox img {
     width: 36%;
     margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
